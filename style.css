@@ -1,0 +1,6 @@
+:root{
+    /* escopo global, onde as variaveis sao funcionais em todo o projeto */
+    --primary-color: #F5CF06;
+    --secundary-color: #8E4106;
+
+}
