@@ -4,3 +4,18 @@
     --secundary-color: #8E4106;
 
 }
+body{
+    height: 100vh;
+    background-color: var(--primary-color);
+    padding: 70px;
+    font-family: Righteous, sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+header span{
+    font-size: 32px;
+    color: var(--secundary-color);
+}
