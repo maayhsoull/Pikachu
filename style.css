@@ -29,7 +29,7 @@ main{
 .sombra{
     position: absolute;
     color: #ffffff55;
-    font-size: 500px;
+    font-size: 26vw;
     z-index: -999;
     top: 50%;
     left: 50%;
@@ -37,7 +37,7 @@ main{
 }
 h1{
     flex-grow: 1; /* este estica o maximo que pode */
-    font-size: 300px;
+    font-size: 20vw;
     color: white;
     display: flex;
     justify-content: center;
@@ -81,4 +81,39 @@ h1{
 footer{
     color: var(--secundary-color);
     text-align: center;
+}
+/* o media é como se fosse um if, neste caso, se mudar a dimensão muda a responsividade do programa */
+/* TABBLET */
+@media (max-width: 768px){
+    body{
+        padding: 30px;
+    }
+    .sombra{
+        transform: translate(-50%, -180%);
+    }
+    h1{
+        align-items: start;
+        transform: translateY(40%);
+        flex-grow: 0;
+
+    }
+    main{
+        justify-content: space-between;
+    }
+    .container{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 0;
+    }
+    .descricao p{
+        text-align: center;
+    }
+    footer{
+        display: none;    }
+}
+/* MOBILE  */
+@media (max-width: 480px) {
+ 
+    
 }
